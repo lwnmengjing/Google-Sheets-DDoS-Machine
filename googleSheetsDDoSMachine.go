@@ -5,13 +5,22 @@ import (
 	"github.com/go-vgo/robotgo"
 	"math/rand"
 	"os/exec"
+	"runtime"
 	"strconv"
 	"time"
 )
 
 //openBrowser open browser on google sheets page
 func openBrowser() bool {
-	args := []string{"cmd", "/c", "start"}
+	var args []string
+	switch runtime.GOOS {
+	case "darwin":
+		args = []string{"open"}
+	case "windows":
+		args = []string{"cmd", "/c", "start"}
+	default:
+		args = []string{"xdg-open"}
+	}
 	cmd := exec.Command(args[0], append(args[1:], "https://docs.google.com/spreadsheets/u/0/create?usp=sheets_home")...)
 	return cmd.Start() == nil
 }
