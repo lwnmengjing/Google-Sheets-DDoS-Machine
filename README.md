@@ -1,6 +1,6 @@
 # Google-Sheets-DDoS-Machine
 
-## Google-Sheets-DDoS-Machine is a automatic rule set which use google sheets for ddos attack to site.
+Google-Sheets-DDoS-Machine is a automatic rule set which use google sheets for ddos attack to site.
 
 # Getting Started
 
@@ -19,11 +19,11 @@ You set:
  Link:  http://yourtarget.com/info.pdf
  Number of tabs:  1
  ```
-## Switch layout to English, because program working correct only with English layout.
+### Switch layout to English, because program working correct only with English layout.
 
 And press enter.
 
-## When program is running don't move mouse and don't touch keyboard. Program is simulate user actions and get control on your keyboard and mouse, so DON'T MOVE MOUSE AND DON'T TOUCH KEYBOARD.
+### When program is running don't move mouse and don't touch keyboard. Program is simulate user actions and get control on your keyboard and mouse, so DON'T MOVE MOUSE AND DON'T TOUCH KEYBOARD.
 
 # License
 
