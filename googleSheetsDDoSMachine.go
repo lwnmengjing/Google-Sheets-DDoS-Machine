@@ -24,27 +24,23 @@ func typing(site string) {
 			for index := 0; index < 26; index++ {
 				num := rand.Intn(100000)
 				s := `=image("` + site + `?r=` + strconv.Itoa(num) + `")`
-				robotgo.TypeString(s)
+				robotgo.TypeStringDelayed(s, 9999999999)
 				robotgo.KeyTap("tab")
 			}
 			robotgo.KeyTap("down")
 			robotgo.KeyTap("home")
-			robotgo.Sleep(1)
 		}
-		robotgo.Sleep(20)
 	}
-	robotgo.Sleep(20)
 }
 
 //openNewTab open new google sheets page
 func openNewTab() {
-	robotgo.Sleep(5)
+	robotgo.Sleep(2)
 	robotgo.KeyToggle("control", "down")
 	robotgo.KeyTap("t")
 	robotgo.KeyToggle("control", "up")
 	robotgo.TypeStringDelayed("https://docs.google.com/spreadsheets/u/0/create?usp=sheets_home", 300)
 	robotgo.KeyTap("enter")
-	robotgo.Sleep(20)
 }
 
 func main() {
