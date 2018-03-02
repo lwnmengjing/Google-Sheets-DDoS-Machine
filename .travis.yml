@@ -1,4 +1,0 @@
-language: go
-go get github.com/go-vgo/robotgo
-go:
-  -"1.10"
