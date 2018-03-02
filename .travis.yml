@@ -1,5 +1,5 @@
 language: go
 go:
-  -"1.10"
-install:
+  - tip
+before_install:
   - go get github.com/go-vgo/robotgo
