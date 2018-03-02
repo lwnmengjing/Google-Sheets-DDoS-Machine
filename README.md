@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/trigun117/Google-Sheets-DDoS-Machine.svg?branch=master)](https://travis-ci.org/trigun117/Google-Sheets-DDoS-Machine)
 # Google-Sheets-DDoS-Machine
 
 Google-Sheets-DDoS-Machine is a automatic rule set which use google sheets for ddos attack to site.

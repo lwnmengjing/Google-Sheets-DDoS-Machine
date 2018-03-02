@@ -1,4 +1,4 @@
 language: go
-go_import_path: github.com/go-vgo/robotgo
+go get github.com/go-vgo/robotgo
 go:
   -"1.10"
