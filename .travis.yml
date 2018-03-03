@@ -1,6 +1,8 @@
 language: go
+
 go:
-  - tip
+  - "1.10"
+
 addons:
    apt:
       packages:
@@ -10,5 +12,9 @@ addons:
          - libxkbcommon-dev
          - xsel
          - xclip  
+
 before_install:
   - go get github.com/go-vgo/robotgo
+
+script:
+  - go build
